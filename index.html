@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link href="styling.css" rel="Stylesheets"/> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="logic.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    html { 
+  background: url(images/bg_0.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ .carousal1 {
+        height:500px;
+        width:auto;
+    }
+   a,p,h1,h2,h3 {
+        text-align:center;
+        font-style: bold;
+        /* color: #61A5FF; */
+        /* color: #5E99FF; */
+        /* color: #4F83FF; */
+    }
+    .title1{
+        
+        height: auto;
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    }
+    .titleLink {
+        color: #1E2DFF;
+    }
+
+    .vid-left {
+        
+        float : left;
+        margin-left: 50px;
+        margin-right: 70px;
+    }
+
+    .vid-left1 {
+        
+        float : left;
+        margin-left: 120px;
+        margin-right: 100px;
+    }
+    .family{
+        margin-left: 40px;
+        height:auto;
+        width:360px;
+        /* width:100% */
+    }
+
+    .mom{
+        margin-left: 120px 
+    }
+</style>
+</head>
+<body>
+  <br>
+<div class="w3-content w3-display-container" style="max-width:800px">
+    <img class="mySlides1 carousal1" src="images/smile_1.png" style="width:100%">
+    <img class="mySlides1 carousal1" src="images/smile_2.png" style="width:100%">
+    <img class="mySlides1 carousal1" src="images/action_1.png" style="width:100%">
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+  </div>
+
+  
+   <h1><b>Gopinath Reddy - A passionate Film maker!</b></h1> 
+
+<p> A little more about him is <a href="https://untoldstoryof.com/gopinath-reddy/"> here.</a>
+A brief on his current work is in this <a href="/images/news_article_1.pdf">article.</a>
+<p>
+<h1>Upcoming movie...<a class="titleLink" href="bg.html">`Sammathame`</a></h1>
+ <a href="bg.html">
+ <img class="title1" src="images/title.png">
+</a>
+</p>
+</body>
+    <h2>His other works</h2>
+    
+    <div class="video-layout">
+        <div class="video">
+            <div class="vid-left1">
+                <iframe width="560" height="390" align="center" src="https://www.youtube.com/embed/zV7OTPKAZ8M"  
+                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="vid-right">
+                <iframe width="560" height="390" src="https://www.youtube.com/embed/k1kzFEKoD3A"  
+                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>
+
+        <br><br><br>
+    
+         <div class="video">
+        <div class="vid-left1">
+        <iframe width="560" height="390" src="https://www.youtube.com/embed/Wj3hRnTDYfQ" frameborder="0"></iframe>
+    </div>
+        <div id="vid-right1">
+        <iframe width="560" height="390"  src="https://www.youtube.com/embed/FxHX1gzzdPM"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>   
+    </div>
+        </div>
+       
+
+        <br><br><br>
+    
+        
+            <div class="video">
+            <div class="vid-left1">
+            <iframe width="560" height="390" src="https://www.youtube.com/embed/TEUIJV5Ovac" 
+            alt="Okariki okarai untuntey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+        </div>
+        <div id="vid-right2">
+            <iframe width="560" height="390"
+            alt="So So" src="https://www.youtube.com/embed/ooJ3YQX6sow"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+    </div> 
+            
+           </div> 
+            
+   <br><br><br><br>
+
+    <h1> Pillars of his strength</h1> 
+    <br>
+<img class="family w3-circle mom" src="images/Mom.png" >
+<img class="family w3-circle" src="images/Sammi.png">
+<img class="family w3-circle" src="images/Dad.png">
+
+<script>
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 10000); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>

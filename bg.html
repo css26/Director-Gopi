@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<style>
+    /* html {
+        background-image: url('images/background.png');
+     background-size: cover;
+     object-fit:scale-down;
+           height:auto
+    } */
+    html { 
+  background: url(images/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+    .carousal {
+        width:100px;
+        height:auto
+    }
+
+    .title{
+        
+        height: auto;
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    }
+    .iframe-1 {
+        /* position: relative;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: block;
+   margin: 0 auto;
+    }
+    .iframe-2 {
+        display: block;
+   margin: 0 auto;
+    }
+    .iframe-3 {
+        display: block;
+   margin: 0 auto;
+    }
+    h3 {
+        text-align:center;
+        /* color: #61A5FF; */
+        /* color: #5E99FF; */
+        color: #4F83FF;
+    }
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    <img class="title" src="images/title.png">
+    <div class="w3-content w3-display-container" style="max-width:800px">
+    <img class="mySlides carousal" src="images/Poster_2.png" style="width:100%">
+    <img class="mySlides carousal" src="images/Poster_4.png" style="width:100%">
+    <img class="mySlides carousal" src="images/Poster_6.png" style="width:100%">
+
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+    <br>
+    <h3>First Glimpse</h3>
+    <iframe class="iframe-1" alt="The blockbuster is loading..." width="640" height="390" src="https://www.youtube.com/embed/7s4FueBCXgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <h3>Announcement of the First Single!</h3>
+    <iframe class="iframe-3" width="640" height="390" src="https://www.youtube.com/embed/t4mQ9o4PYjU" title="Sammathame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <h3>First Lyrical - Krishna & Sathyabhama</h3>
+    <iframe class="iframe-2" alt="A melody is loading" width="640" height="390" src="https://www.youtube.com/embed/ItHiyJlSVhw?list=RDItHiyJlSVhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script>
+        var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 10000); // Change image every 2 seconds
+}
+        </script>
+        
+</body>
+</html>
