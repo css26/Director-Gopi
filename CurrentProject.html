@@ -27,7 +27,7 @@
   margin-right: auto;
   width: 50%;
     }
-    .iframe-1 {
+    .iframe {
         /* position: relative;
     margin: auto;
     top: 50%;
@@ -35,15 +35,11 @@
     transform: translate(-50%, -50%); */
     display: block;
    margin: 0 auto;
+   /* width="640" height="390" */
+   width: 640px;
+   height:390px;
     }
-    .iframe-2 {
-        display: block;
-   margin: 0 auto;
-    }
-    .iframe-3 {
-        display: block;
-   margin: 0 auto;
-    }
+  
     h3 {
         text-align:center;
         /* color: #61A5FF; */
@@ -56,9 +52,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
-    <img class="title" src="images/title.png">
-    <div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="title" src="images/title.png">
+  <div class="w3-content w3-display-container" style="max-width:800px">
     <img class="mySlides carousal" src="images/Poster_2.png" style="width:100%">
+    <img class="mySlides carousal" src="images/bulletLa_poster.jpg" style="width:100%">
     <img class="mySlides carousal" src="images/Poster_4.png" style="width:100%">
     <img class="mySlides carousal" src="images/Poster_6.png" style="width:100%">
 
@@ -68,17 +65,28 @@
         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
       </div>
     </div>
     <br>
+
+  
     <h3>First Glimpse</h3>
-    <iframe class="iframe-1" alt="The blockbuster is loading..." width="640" height="390" src="https://www.youtube.com/embed/7s4FueBCXgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" alt="The blockbuster is loading..."  src="https://www.youtube.com/embed/7s4FueBCXgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
     <h3>Announcement of the First Single!</h3>
-    <iframe class="iframe-3" width="640" height="390" src="https://www.youtube.com/embed/t4mQ9o4PYjU" title="Sammathame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe"  src="https://www.youtube.com/embed/t4mQ9o4PYjU" title="Sammathame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
     <h3>First Lyrical - Krishna & Sathyabhama</h3>
-    <iframe class="iframe-2" alt="A melody is loading" width="640" height="390" src="https://www.youtube.com/embed/ItHiyJlSVhw?list=RDItHiyJlSVhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="iframe" alt="A melody is loading"  src="https://www.youtube.com/embed/ItHiyJlSVhw?list=RDItHiyJlSVhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+    <h3>Announcement of the Second Single!</h3>
+    <iframe class="iframe" alt="A melody is loading" src="https://www.youtube.com/embed/SlkeuCBrQpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Second Lyrical - 'BULLET LA!' </h3>
+    <iframe class="iframe" alt="A melody is loading"  src="https://www.youtube.com/embed/jNfh8sGpyPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+   
     <script>
         var slideIndex = 0;
 carousel();
